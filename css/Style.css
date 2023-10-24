@@ -1,0 +1,463 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #020228;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    padding: 10px;
+
+  }
+
+  nav img {
+    width: 50%;
+  }
+
+  nav .bnt_entrar {
+    font-family: Relaway, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 24px 0 0;
+    text-transform: uppercase;
+    border-style: none;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+
+  }
+
+  nav .bnt_assinar {
+    font-family: Relaway, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 24px 0 0;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    border-style: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: #b535f6;
+    transition: 1s;
+  }
+
+
+
+  .bnt_assinar:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: Gradiente 5s ease infinite;
+  }
+
+  header::after {
+    content: "";
+    width: 100%;
+    height: 250px;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(0deg, #020228, transparent);
+  }
+
+
+
+  @keyframes Gradiente {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 50% 100%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+  header img {
+    margin: 0 15px;
+  }
+
+  header .tittle {
+    font-family: Relaway, sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    max-width: 60%;
+    text-align: center;
+    margin: 30px auto;
+  }
+
+  header .header_title {
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  header .divisor {
+    border: 3px solid white;
+    max-width: 70%;
+    width: 700px;
+    height: 5px;
+    background: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 15px;
+  }
+
+  header .pacote {
+    text-align: center;
+  }
+
+  header .assinatura {
+    font-family: Quicksand, sans-serif;
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+
+  header .vlr_assinatura {
+    font-family: Quicksand, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 40px;
+  }
+
+  header p .mes_assinatura {
+    font-family: Relaway, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  header .btn_header {
+
+    font-family: Relaway, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px 70px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 40px;
+    background: linear-gradient(45deg, #9b34ef 0%, #490cb0 20%, transparent 50%);
+    transition: 2s;
+    animation: btn_header 3s ease-in-out infinite;
+  }
+
+  .btn_header:hover {
+    background: transparent;
+    border: 2px solid #ff00e5;
+  }
+
+  @keyframes btn_header {
+    0% {
+      transform: rotate(0)
+    }
+
+    15% {
+      transform: rotate(-10deg);
+    }
+
+    20% {
+      transform: rotate(10deg);
+    }
+
+    25% {
+      transform: rotate(-10deg);
+    }
+
+    30% {
+      transform: rotate(10deg);
+    }
+
+    35% {
+      transform: rotate(-15deg);
+    }
+
+    40% {
+      transform: rotate(15deg);
+    }
+
+    45%,
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+
+  header .description_header {
+    font-family: Quicksand, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto 100px auto;
+  }
+
+  header p,
+  h2 {
+    color: #ffffff;
+  }
+
+  li,
+  h1 {
+    color: #ffffff;
+  }
+
+  main .contanier_01 {
+    background-image: url(../assets/images/background-movies-series.png), linear-gradient(90deg, #020228 50%, transparent, #020228 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 200px;
+  }
+
+
+  main .title_main-01 {
+    font-family: Relaway, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  main section .contanier {
+
+    display: flex;
+    justify-content: center;
+    min-height: 600px;
+    margin: 40px auto;
+    gap: 80px;
+  }
+
+  main .Card_01 {
+    background: linear-gradient(0deg, transparent, #3b1e63);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    perspective: 100px;
+  }
+
+  main .Card_02 {
+    background: linear-gradient(0deg, transparent, #3b1e63);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+  }
+
+  main .Card_02 h2 {
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  main .Card_01 .vlr_card-01 {
+    color: #ff00e5;
+    font-size: 2rem;
+    margin-left: 130px;
+
+  }
+
+  main .Card_02 .Mes_card-01 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  main .Card_02 h2 {
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  main .Card_02 .vlr_card-02 {
+    color: #ff00e5;
+    font-size: 2rem;
+    margin-left: 130px;
+  }
+
+  main .Card_02 .Mes_card-0 {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  main section li {
+    font-family: Relaway, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    list-style: none;
+    padding: 0 0 14px 0;
+  }
+
+  main li::marker {
+    content: "+";
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
+
+
+  main section .contanier .bnt_plano-01 {
+
+    font-family: Relaway, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg,
+        #9b34ef 0%,
+        #490cb0 20%, transparent);
+    color: #ffffff;
+    padding: 15px 80px;
+    border-radius: 50px;
+    position: relative;
+    top: 140px;
+    left: 20px;
+    transition: 2s;
+  }
+
+  .bnt_plano-01:hover {
+    border: 2px solid #ff00e5;
+    
+  }
+
+  main section .contanier .bnt_plano-02 {
+
+    font-family: Relaway, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg,
+        #9b34ef 0%,
+        #490cb0 20%, transparent);
+    color: #ffffff;
+    padding: 15px 80px;
+    border-radius: 50px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+    transition: 2s;
+  }
+
+  .bnt_plano-02:hover {
+    background: transparent;
+    border: 2px solid #ff00e5;
+  }
+
+  main .title_cards {
+    font-family: Relaway, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 150px;
+  }
+
+  main .cards_contanier {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img-01 img-02 img-03"
+      "img-04 img-05 img-06";
+    max-width: 1200px;
+    margin: 200px auto;
+    gap: 50px;
+
+  }
+
+  main .cards_contanier img {
+    object-fit: cover;
+    max-width: 100%;
+
+
+  }
+
+
+  main .cards_contanier .img-01 {
+    grid-area: img-01;
+  }
+
+
+
+  main .cards_contanier .img-02 {
+    grid-area: img-02;
+  }
+
+
+  main .cards_contanier .img-03 {
+    grid-area: img-03;
+  }
+
+
+  main .cards_contanier .img-04 {
+    grid-area: img-04;
+  }
+
+
+  main .cards_contanier .img-05 {
+    grid-area: img-05;
+  }
+
+
+  main .cards_contanier .img-06 {
+    grid-area: img-06;
+  }
+
+
+  footer {
+    text-align: center;
+  }
+
+  footer .link_footer {
+    font-family: Relaway, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+  }
+
+  footer .link_footer a {
+    text-decoration: none;
+    color: #9e86ff;
+    margin-right: 20px;
+  }
+
+  footer blockquote cite {
+    color: #9e86ff;
+    font-family: Relaway, sans-serif;
+    font-size: 0.8rem;
+  }
+
+  footer .link_rdc {
+    margin: 60px auto;
+
+  }
+
+  footer .link_rdc a {
+    margin-right: 20px;
+  }
